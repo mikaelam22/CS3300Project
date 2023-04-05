@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_04_234325) do
+ActiveRecord::Schema.define(version: 2023_04_05_034653) do
 
   create_table "strategies", force: :cascade do |t|
-    t.integer "difficulty"
     t.string "title"
+    t.text "description"
     t.string "agent"
     t.string "map"
     t.string "side"
-    t.text "description"
+    t.integer "difficulty"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

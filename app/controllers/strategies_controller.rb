@@ -65,6 +65,6 @@ class StrategiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def strategy_params
-      params.require(:strategy).permit(:difficulty, :title, :agent, :map, :side, :description)
+      params.require(:strategy).permit(:title, :description, :agent, :map, :side, :difficulty)
     end
 end
